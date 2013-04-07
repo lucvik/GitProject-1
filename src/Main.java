@@ -9,7 +9,7 @@ public class Main {
 		atlantis.setName("Atlantis");
 		atlantis.setWeight(2040001.0);
 		
-		System.out.println("Spacestation");
+		System.out.println("Spacestation 2.0");
 		System.out.println("==== ==== ==== ==== ====");
 		System.out.println("Hello " + atlantis);
 
