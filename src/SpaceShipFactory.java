@@ -18,7 +18,7 @@ public class SpaceShipFactory {
         try {
 			con = DriverManager.getConnection(url, user, password);
 	        st = con.createStatement();
-	        rs = st.executeQuery("SELECT * FROM SpaceShip WHERE id=" + id);
+	        rs = st.executeQuery("SELECT * FROM spaceship WHERE id=" + id);
 	
 	        if (rs.next()) {
 	    		SpaceShip spaceShip = new SpaceShip();
