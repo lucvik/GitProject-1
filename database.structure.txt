@@ -1,0 +1,36 @@
+-- phpMyAdmin SQL Dump
+-- version 3.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Apr 07, 2013 at 07:57 PM
+-- Server version: 5.5.24-log
+-- PHP Version: 5.3.13
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `spaceship`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `spaceship`
+--
+
+CREATE TABLE IF NOT EXISTS `spaceship` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(75) NOT NULL,
+  `weight` double NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `spaceship`
+--
+
+INSERT INTO `spaceship` (`id`, `name`, `weight`) VALUES
+(1, 'Atlantis', 2040000),
+(2, 'Saturn V', 2800000);
