@@ -1,4 +1,5 @@
 import java.sql.SQLException;
+import java.util.List;
 
 public class Main {
 
@@ -7,9 +8,10 @@ public class Main {
 	 * @throws SQLException
 	 */
 	public static void main(String[] args) throws SQLException {
-		SpaceShip atlantis = SpaceShipFactory.getSpaceShip(2);
-
-		System.out.println("Spacestation 2.0");
+		List<SpaceShip> spaceships = SpaceShipFactory.getAllSpaceShips();
+		SpaceShip atlantis = spaceships.get(0);
+		
+		System.out.println("Spacestation 3.0");
 		System.out.println("==== ==== ==== ==== ====");
 		System.out.println("Hello " + atlantis);
 
