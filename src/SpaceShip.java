@@ -13,13 +13,13 @@ public class SpaceShip {
 	}
 	
 	/**
-	 * @return the name
+	 * @return the name of the spaceship
 	 */
 	public String getName() {
 		return name;
 	}
 	/**
-	 * @param name the name to set
+	 * @param name setting the spaceships name
 	 */
 	public void setName(String name) {
 		this.name = name;
@@ -36,6 +36,4 @@ public class SpaceShip {
 	public void setWeight(Double weight) {
 		this.weight = weight;
 	}
-	
-	
 }
